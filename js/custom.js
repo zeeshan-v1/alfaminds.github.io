@@ -57,7 +57,10 @@ $(document).ready(function() {
 
     var container = $('#portfolio_wrapper');
 
-
+    $(".navbar-nav li a").click(function(event) {
+        $(".navbar-collapse").collapse('hide');
+      });
+      
     container.isotope({
         animationEngine: 'best-available',
         animationOptions: {
